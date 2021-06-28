@@ -1,0 +1,91 @@
+.Home {
+     display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+    
+  }
+  .connectBtnCon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 0.2vw;
+  }
+  .logoCon {
+    text-align: center;
+  }
+  .logo {
+    width: 10vw;
+  }
+  .arrowCon {
+    text-align: center;
+  }
+  .arrowCon img {
+    width: 3vw;
+  }
+  .inputSec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .inputSec .mainImg {
+    width: 3vw;
+  }
+  .logoCardCon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 30vw;
+  }
+  .totalText {
+    font-size: 1.5vw;
+    font-weight: 200;
+    width: 20vw;
+    text-align: center;
+    margin: 1vw;
+  }
+  .submitBtnCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: -2v; */
+  }
+  
+  @media screen and (max-width: 960px) {
+    .Home {
+      width: 100%;
+    }
+    .logo {
+        width: 30vw;
+    }
+    .inputSec {
+        margin: 1vw;
+    }
+   .inputSec .mainImg {
+        width: 8vw;
+    }
+    .arrowCon img {
+        width: 8vw;
+    }
+    .logoCardCon {
+        width: 70vw;
+    }
+    .totalText {
+      font-size:4vw;
+      font-weight: 200;
+      width: 50vw;
+      text-align: center;
+      margin: 2vw;
+    }
+  }
+  

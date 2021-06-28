@@ -1,0 +1,322 @@
+.connectBtn {
+  font-size: 1.9vw;
+  font-weight: 200;
+  border: 0.05vw solid #828282;
+  border-radius: 1vw;
+  width: 15vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hiddenBtn{
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+.input {
+  width: 20vw;
+  height: 4vw;
+  border-radius: 1vw;
+  border: 0.5px solid #828282;
+  text-align: center;
+  font-size: 2vw;
+}
+.input:hover {
+  outline: none;
+}
+.logoCard {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3vw;
+}
+.logoCard span {
+  font-size: 1.1vw;
+  margin-top: 0.5vw;
+}
+.card {
+  width: 6vw;
+  height: 6vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 8px 8px 2px #8282824d;
+}
+.card img {
+  width: 3vw;
+}
+.creditCard {
+  width: 6vw;
+  height: 6vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px 0px #8282824d;
+}
+.creditCard img {
+  width: 3vw;
+}
+.creditCard span {
+  font-size: 1.2vw;
+}
+.submitBtn {
+  background-color: #cf6cd3;
+  color: white;
+  font-size: 1.5vw;
+  width: 22vw;
+  height: 3.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1vw;
+  box-shadow: 0px 8px 20px 0px #613eea52;
+}
+
+@media screen and (max-width: 960px) {
+  .connectBtn {
+    font-size: 3vw;
+    font-weight: 200;
+    border: 0.5px solid #828282;
+    border-radius: 1vw;
+    width: 30vw;
+    height: 6vw;
+  }
+  .input {
+    width: 40vw;
+    height: 8vw;
+    border-radius: 1vw;
+    border: 0.5px solid #828282;
+    text-align: center;
+    font-size: 4vw;
+  }
+  .creditCard {
+    width: 12vw;
+    height: 12vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px 0px #8282824d;
+  }
+  .creditCard img {
+    width: 6vw;
+  }
+  .creditCard span {
+    font-size: 2.2vw;
+  }
+  .card {
+    width: 15vw;
+    height: 15vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 8px 8px 2px #8282824d;
+  }
+  .card img {
+    width: 10vw;
+  }
+  .logoCard span {
+    font-size: 3vw;
+    margin-top: 0.5vw;
+  }
+  .submitBtn {
+    background-color: #cf6cd3;
+    color: white;
+    font-size: 5vw;
+    width: 45vw;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    box-shadow: 0px 8px 20px 0px #613eea52;
+  }
+}
+
+/* animation */
+
+nav.float-action-button {
+  position: fixed;
+  bottom: 0;
+  right: 28vw;
+  margin: 1em;
+}
+
+a.buttons {
+  box-shadow: 0 5px 11px -2px rgba(0, 0, 0, 0.18),
+    0 4px 12px -7px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  font-size: 2.6em;
+  padding: 1px 0 0 0;
+  text-align: center;
+  display: block;
+  margin: 20px auto 0;
+  position: relative;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+a.buttons:active,
+a.buttons:focus,
+a.buttons:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  text-decoration: none;
+}
+
+a.buttons:not(:last-child) {
+  width: 40px;
+  height: 40px;
+  margin: 20px auto 0;
+  opacity: 0;
+  font-size: 1.6em;
+  padding-top: 4px;
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+a.main-button > i:first-child {
+  position: relative;
+  margin-top: 25px;
+}
+
+nav.float-action-button:hover a.buttons:not(:last-child) {
+  opacity: 1;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  margin: 20px auto 0;
+}
+
+a.buttons:nth-last-child(1) {
+  -webkit-transition-delay: 25ms;
+  transition-delay: 25ms;
+  background-color: #d32f2f;
+  /* Button color */
+}
+
+a.buttons:nth-last-child(1) i.fa {
+  transform: rotate3d(0, 0, 1, 0);
+  transition: content 0.4s, transform 0.4s, opacity 0.4s;
+}
+
+a.buttons:nth-last-child(1):hover i.fa {
+  transform: rotate3d(0, 0, 1, -180deg);
+}
+
+a.buttons:nth-last-child(1) i.fa:nth-last-child(1) {
+  position: absolute;
+  margin: 10px 0 0 -32px;
+}
+
+a.buttons:nth-last-child(1) i.fa:nth-last-child(2) {
+  opacity: 0;
+}
+
+a.buttons:nth-last-child(1):hover i.fa:nth-last-child(1) {
+  opacity: 0;
+}
+
+a.buttons:nth-last-child(1):hover i.fa:nth-last-child(2) {
+  opacity: 1;
+}
+
+a.buttons:not(:last-child):nth-last-child(2) {
+  -webkit-transition-delay: 50ms;
+  transition-delay: 20ms;
+  background-color: #3b5998;
+  /* Facebook color */
+}
+
+a.buttons:not(:last-child):nth-last-child(3) {
+  -webkit-transition-delay: 75ms;
+  transition-delay: 40ms;
+  background-color: #1da1f2;
+  /* Twitter color */
+}
+
+.actionBtnIMg {
+    width: 3vw;
+}
+@media screen and (max-width: 600px) {
+  .connectBtn {
+    font-size: 3.5vw;
+    font-weight: 200;
+    border: 0.5px solid #828282;
+    border-radius: 1vw;
+    width: 33vw;
+    height: 8vw;
+  }
+  .input {
+    width: 43vw;
+    height: 11vw;
+    border-radius: 1vw;
+    border: 0.5px solid #828282;
+    text-align: center;
+    font-size: 4.5vw;
+  }
+  .creditCard {
+    width: 15vw;
+    height: 15vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px 0px #8282824d;
+  }
+  .creditCard img {
+    width: 9vw;
+  }
+  .creditCard span {
+    font-size: 2.5vw;
+  }
+  .card {
+    width: 18vw;
+    height: 18vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 8px 8px 2px #8282824d;
+  }
+  .card img {
+    width: 13vw;
+  }
+  .logoCard span {
+    font-size: 3.5vw;
+    margin-top: 0.5vw;
+  }
+  .submitBtn {
+    background-color: #cf6cd3;
+    color: white;
+    font-size: 5.5vw;
+    width: 48vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    box-shadow: 0px 8px 20px 0px #613eea52;
+  }
+}
